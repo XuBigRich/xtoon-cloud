@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xtoon-cloud</artifactId>
+        <groupId>com.xtoon.cloud</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xtoon-ops</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>xtoon-monitor-server</module>
+        <module>xtoon-register-server</module>
+        <module>xtoon-sentinel-server</module>
+        <module>xtoon-auth-server</module>
+        <module>xtoon-gateway-server</module>
+    </modules>
+
+    <properties>
+        <spring-boot-admin.version>2.4.1</spring-boot-admin.version>
+    </properties>
+
+    <dependencies>
+        <!--监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--监控客户端-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${spring-boot-admin.version}</version>
+        </dependency>
+    </dependencies>
+</project>

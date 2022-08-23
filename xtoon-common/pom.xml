@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xtoon-cloud</artifactId>
+        <groupId>com.xtoon.cloud</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xtoon-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>通用模块</description>
+
+    <modules>
+        <module>xtoon-common-core</module>
+        <module>xtoon-common-mybatis</module>
+        <module>xtoon-common-redis</module>
+        <module>xtoon-common-web</module>
+        <module>xtoon-common-log</module>
+        <module>xtoon-common-swagger</module>
+        <module>xtoon-common-tenant</module>
+    </modules>
+
+
+</project>
